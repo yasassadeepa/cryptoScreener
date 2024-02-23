@@ -1,13 +1,16 @@
-const AuthLayout = ({ 
-  children
-}: { 
-  children: React.ReactNode
-}) => {
-  return ( 
-    <div className="h-full flex items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800">
+import { AuhLayout } from "@/components/layout/auth";
+const AuthLayout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <AuhLayout
+      description="
+  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+  Dolores, voluptatibus natus atque  numquam expedita porro
+  neque mollitia. "
+      subSlogan="Crypto Platform"
+    >
       {children}
-    </div>
-   );
-}
- 
+    </AuhLayout>
+  );
+};
+
 export default AuthLayout;

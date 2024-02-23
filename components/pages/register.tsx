@@ -23,7 +23,7 @@ export default function AuthenticationPage({
         {children}
         {backStep ? (
           <Link
-            className={buttonVariants({ variant: "secondary", size: "full" })}
+            className={buttonVariants({ variant: "secondary" })}
             href={backStep}
           >
             Back
